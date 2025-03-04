@@ -1,0 +1,50 @@
+/* Animaciones */
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mensajes */
+.alert {
+    transition: opacity 0.3s ease;
+}
+
+/* Tabla */
+.table-hover tbody tr:hover {
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
+.estado-select {
+    width: 150px;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+.estado-select option {
+    background-color: white;
+    color: black;
+}
+
+.estado-select[value="programado"] { background-color: #fff3cd; }
+.estado-select[value="realizado"] { background-color: #d4edda; }
+.estado-select[value="cancelado"] { background-color: #f8d7da; }
+
+
+.modal-body p {
+    margin-bottom: 0.5rem;
+}
+
+.modal-body strong {
+    display: inline-block;
+    min-width: 120px;
+    color: #666;
+}
+
+tr:hover {
+    background-color: #f8f9fa !important;
+    transition: background-color 0.2s ease;
+}
